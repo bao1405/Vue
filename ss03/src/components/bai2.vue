@@ -7,12 +7,7 @@
 </template>
 
 <script>
-const elementClass=[
-  {
-    id:1,
-
-  }
-]
+const elementClass= "elementClass";
 </script>
 
 <style scoped>

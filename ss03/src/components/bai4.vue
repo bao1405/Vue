@@ -1,16 +1,14 @@
 <template>
-  <div :class="{ active: isActive }" :style="{ backgroundColor: backgroundColor }">
-    Nội dung của thẻ div
-  </div>
+   <div :class="['div', isActive ? 'active' : '']">Block</div>
 </template>
 
 <script>
 const isActive = true;
-const backgroundColor= 'red';
 </script>
 
 <style scoped>
 .active {
+    background-color: red;
   color: #fff;
 }
 </style>

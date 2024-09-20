@@ -1,17 +1,13 @@
 <template>
   <div>
-    <input type="text" :disabled="isDisable" placeholder="Nhập văn bản..." />
-    <button @click="toggleDisable">
-      {{ isDisable ? 'Bỏ vô hiệu hóa' : 'Vô hiệu hóa' }}
-    </button>
+    <input type="text" :disabled="isDisable" :value="isDisable ? '' : value" />
+    
   </div>
 </template>
 
 <script>
 const isDisable = true;
-const toggleDisable = () =>{
-    this.isDisable = !this.isDisable; 
-  }
+const value = "cho phép";
 </script>
 
 <style >
