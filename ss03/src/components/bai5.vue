@@ -3,13 +3,9 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    handleClick() {
-      console.log('Clicked');
-    },
-  },
-};
+const handleClick = ()=>{
+    console.log("click me");
+}
 </script>
 
 <style scoped>

@@ -6,18 +6,9 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      inputValue: '', 
-    };
-  },
-  methods: {
-    handleSubmit() {
+  const handleSubmit=()=> {
       console.log('Form submission prevented!');
-    },
-  },
-};
+    }
 </script>
 
 <style scoped>

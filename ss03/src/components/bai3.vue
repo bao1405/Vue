@@ -8,18 +8,10 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      isDisable: true
-    };
-  },
-  methods: {
-    toggleDisable() {
-      this.isDisable = !this.isDisable; 
-    }
+const isDisable = true;
+const toggleDisable = () =>{
+    this.isDisable = !this.isDisable; 
   }
-};
 </script>
 
 <style >

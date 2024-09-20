@@ -5,14 +5,8 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      isActive: true,
-      backgroundColor: 'blue',
-    };
-  },
-};
+const isActive = true;
+const backgroundColor= 'red';
 </script>
 
 <style scoped>

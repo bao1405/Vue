@@ -3,15 +3,11 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    handleClick(param) {
+const handleClick =(param)=> {
       console.log(param); 
-    },
-  },
-};
+    }
 </script>
 
-<style >
+<style scoped>
 
 </style>

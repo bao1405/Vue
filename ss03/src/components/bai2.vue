@@ -7,24 +7,13 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      elementId: 'myElementId',
-      elementClass: ['class1', 'class2', 'class3'] // Có thể dùng một hoặc nhiều class
-    };
+const elementClass=[
+  {
+    id:1,
+
   }
-};
+]
 </script>
 
 <style scoped>
-.class1 {
-  color: red;
-}
-.class2 {
-  font-weight: bold;
-}
-.class3 {
-  font-size: 20px;
-}
 </style>
