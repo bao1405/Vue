@@ -8,6 +8,7 @@ const count = ref(0);
 const handleClick = () => {
   count.value++;
 };
+
 </script>
 
 <style>
