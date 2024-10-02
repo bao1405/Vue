@@ -1,47 +1,52 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <div>
+        <h1>lifecycle!</h1>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+        <!-- 
+            React :
+            1. khởi tạo create : khởi tạo state, props
+            2. mount  : gắt kết đưa vào DOM
+            3. update : quá trình cập nhật thay đổi state (re-render)
+            4. unmount : loại bỏ khỏi DOM 
+            Vuejs cũng tương tự gồm 4 giai đoạn
+            khởi tạo-gắn kết- cập nhật- loại bỏ.
+
+         -->
+        <Lifecycle :count="countA" v-if="isShow"></Lifecycle>
+        <button @click="handleClick">click</button>
+        <button @click="unmountComponent">click-unmount</button>
+        <div>
+           <Bai1 />
+          <Bai2 />
+          <Bai3 />
+          <Bai4 />
+          <Bai5/>
+          <Bai7/>
+          <Bai8/>
+          <Bai9/>
+          <Bai10/>
+        </div>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<script setup>
+import { ref } from "vue";
+import Lifecycle from "./components/Lifecycle.vue";
+const isShow = ref(true);
+const countA = ref(0);
+const handleClick = () => {
+    countA.value++;
+};
+const unmountComponent = () => {
+    isShow.value = false;
+};
+import Bai1 from "./components/Bai1.vue";
+import Bai2 from "./components/Bai2.vue";
+import Bai3 from "./components/Bai3.vue";
+import Bai4 from "./components/Bai4/Parent.vue";
+import Bai5 from "./components/Bai5/Parent.vue";
+import Bai7 from "./components/Bai7.vue";
+import Bai8 from "./components/Bai8.vue";
+import Bai9 from "./components/Bai9.vue";
+import Bai10 from "./components/BT10.vue";
+</script>
+<style></style>
