@@ -1,7 +1,5 @@
 <template>
-  <div>
-    manager-product
-  </div>
+  
 </template>
 
 <script>

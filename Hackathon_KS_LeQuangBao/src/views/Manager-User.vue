@@ -1,35 +1,8 @@
 <template>
-  <v-app>
     <v-container fluid>
       <v-row no-gutters>
-        <v-col cols="2">
-          <v-navigation-drawer app permanent color="black" width="230px">
-            <v-list>
-              <v-list-item-group>
-                <v-list-item>
-                  <v-list-item-content>
-                    <v-list-item-title>Dashboard</v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-content>
-                     <v-list-item-title class="blur-background">Manager User</v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-content>
-                    <v-list-item-title>Manager Product</v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list-item-group>
-            </v-list>
-          </v-navigation-drawer>
-        </v-col>
-
-        <!-- Content Area -->
-        <v-col cols="10">
-          <!-- Header with Title and Add Button -->
-          <v-row class="d-flex justify-space-between align-center my-3">
+        <v-col cols="13">
+          <v-row class="d-flex justify-space-between align-center my-1 mb-1">
             <v-col>
               <h1 class="text-center">Manager User</h1>
             </v-col>
@@ -119,7 +92,6 @@
         </v-col>
       </v-row>
     </v-container>
-  </v-app>
 </template>
 
 <script setup>
@@ -270,7 +242,6 @@ const closeDeleteDialog = () => {
 <style scoped>
 .v-application {
   font-family: 'Roboto', sans-serif;
-  
 }
 
 h1 {
