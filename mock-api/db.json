@@ -1,0 +1,39 @@
+{
+    "products" :[
+        {
+            "id":1,
+            "name":"iphone",
+            "image":"https://kenh14cdn.com/203336854389633024/2024/2/27/iphone-16-pro-camera-leak-17090186078261009044872.jpg",
+            "price":200000,
+            "quantity":10
+        },
+        {
+            "id":2,
+            "name":"iphone",
+            "image":"https://kenh14cdn.com/203336854389633024/2024/2/27/iphone-16-pro-camera-leak-17090186078261009044872.jpg",
+            "price":200000,
+            "quantity":10
+        },
+        {
+            "id":3,
+            "name":"iphone",
+            "image":"https://kenh14cdn.com/203336854389633024/2024/2/27/iphone-16-pro-camera-leak-17090186078261009044872.jpg",
+            "price":200000,
+            "quantity":10
+        },
+        {
+            "id":4,
+            "name":"iphone",
+            "image":"https://kenh14cdn.com/203336854389633024/2024/2/27/iphone-16-pro-camera-leak-17090186078261009044872.jpg",
+            "price":200000,
+            "quantity":10
+        },
+        {
+            "id":5,
+            "name":"iphone",
+            "image":"https://kenh14cdn.com/203336854389633024/2024/2/27/iphone-16-pro-camera-leak-17090186078261009044872.jpg",
+            "price":200000,
+            "quantity":10
+        }
+    ]
+}
