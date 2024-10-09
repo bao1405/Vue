@@ -65,12 +65,10 @@
         <select v-model="recordsPerPage" class="form-select">
           <option value="10">Hiển thị 10 bản ghi trên trang</option>
           <option value="20">Hiển thị 20 bản ghi trên trang</option>
-          <option value="50">Hiển thị 50 bản ghi trên trang</option>
-          <option value="100">Hiển thị 100 bản ghi trên trang</option>
         </select>
         <ul class="pagination">
           <li class="page-item">
-            <a class="page-link" href="#" @click.prevent="prevPage">Previous</a>
+            <a class="page-link" href="#" @click.prevent="prevPage"><<<</a>
           </li>
           <li class="page-item" v-for="page in totalPages" :key="page">
             <a class="page-link" href="#" @click.prevent="goToPage(page)">{{
@@ -78,7 +76,7 @@
             }}</a>
           </li>
           <li class="page-item">
-            <a class="page-link" href="#" @click.prevent="nextPage">Next</a>
+            <a class="page-link" href="#" @click.prevent="nextPage">>>></a>
           </li>
         </ul>
       </footer>
