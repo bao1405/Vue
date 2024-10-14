@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "user": [
+    {
+      "id": 1,
+      "name": "Nguyễn Văn A",
+      "dob": "2024-10-17",
+      "email": "nvana@gmail.com",
+      "address": "Ba Đình, Hà Nội",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Trần Thị B",
+      "dob": "1985-07-15",
+      "email": "ttb@gmail.com",
+      "address": "Cầu Giấy, Hà Nội",
+      "active": false
+    },
+    {
+      "iid": 3,
+      "name": "Lê Văn C",
+      "dob": "2000-07-02",
+      "email": "lvc@gmail.com",
+      "address": "Hai Bà Trưng, Hà Nội",
+      "active": false
+    },
+    {
+      "id": 4,
+      "name": "Phạm Thị D",
+      "dob": "1995-05-20",
+      "email": "ptd@gmail.com",
+      "address": "Hoàn Kiếm, Hà Nội",
+      "active": false
+    },
+    {
+      "name": "sad",
+      "dob": "2024-10-01",
+      "email": "asd@gamil.com",
+      "address": "Hà Nội",
+      "active": true,
+      "id": 5
+    }
+  ]
+}
